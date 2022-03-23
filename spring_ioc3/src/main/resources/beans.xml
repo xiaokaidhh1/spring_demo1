@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+       <!--    开启注解的支持-->
+        <context:annotation-config/>
+
+    <bean id="cat" class="com.kai.pojo.Cat"/>
+    <bean id="cat2" class="com.kai.pojo.Cat"/>
+    <bean id="dog" class="com.kai.pojo.Dog"/>
+
+<!--    byName会在上下文中自动查找和自己对象set方法后面的值对应beanid-->
+    <bean id="people" class="com.kai.pojo.People">
+
+    </bean>
+
+</beans>

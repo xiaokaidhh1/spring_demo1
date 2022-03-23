@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="user" class="com.kai.user.User">-->
+<!--        <constructor-arg index="0" value="hhhhhhh"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="com.kai.user.User">-->
+<!--        <constructor-arg type="java.lang.String" value="hhhhhh"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="com.kai.user.User">-->
+<!--        <constructor-arg name="name" value="xiaokai"/>-->
+<!--    </bean>-->
+
+<!--别名-->
+    <alias name="user" alias="abcd"></alias>
+    <!-- more bean definitions go here -->
+
+<!--    id:bean的唯一标识符-->
+<!--    class：bean对象所对应的全限定名，包名+类型-->
+<!--    name:也是别名，name可以同时取多个别名-->
+        <bean id="user" class="com.kai.user.User" name="a1,b,c">
+            <constructor-arg name="name" value="xiaokai"/>
+        </bean>
+
+
+</beans>
