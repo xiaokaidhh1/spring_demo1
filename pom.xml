@@ -27,6 +27,7 @@
         <module>spring_06_proxy</module>
         <module>spring_07_aop</module>
         <module>spring_08_mybatis</module>
+        <module>spring_09_printer</module>
     </modules>
 
     <dependencies>
