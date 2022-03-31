@@ -3,18 +3,17 @@ package com.kai.service.impl;
 import com.kai.service.Ink;
 import com.kai.service.Paper;
 import com.kai.service.Printer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+
+@Controller
 public class HpPrinter implements Printer {
+    @Autowired
     private Ink ink;
+    @Autowired
     private Paper paper;
 
-    public void setInk(Ink ink) {
-        this.ink = ink;
-    }
-
-    public void setPaper(Paper paper) {
-        this.paper = paper;
-    }
 
     @Override
     public void print(String word) {

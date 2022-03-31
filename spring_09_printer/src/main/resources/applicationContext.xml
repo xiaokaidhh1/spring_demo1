@@ -11,15 +11,15 @@
 ">
 <!--    注册bean-->
 
-    <bean id="printer" class="com.kai.service.impl.HpPrinter">
-        <property name="ink" ref="ink"/>
-        <property name="paper" ref="paper"/>
-     </bean>
-    <bean id="paper" class="com.kai.service.impl.A4Paper"/>
-     <bean id="ink" class="com.kai.service.impl.EsInk"/>
+<!--    <bean id="printer" class="com.kai.service.impl.HpPrinter">-->
+<!--        <property name="ink" ref="ink"/>-->
+<!--        <property name="paper" ref="paper"/>-->
+<!--     </bean>-->
+<!--    <bean id="paper" class="com.kai.service.impl.A4Paper"/>-->
+<!--     <bean id="ink" class="com.kai.service.impl.EsInk"/>-->
 
-<!--   开启注解支持-->
-    <aop:aspectj-autoproxy/>
+<!--   开启扫描-->
+    <context:component-scan base-package="com.kai.service"/>
 
 </beans>
 

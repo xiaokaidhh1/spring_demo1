@@ -1,7 +1,9 @@
 package com.kai.service.impl;
 
 import com.kai.service.Paper;
+import org.springframework.stereotype.Component;
 
+@Component
 public class A4Paper implements Paper {
     @Override
     public String transformWord(String word) {
